@@ -19,8 +19,13 @@
 
     </div>
     <div class="container-md col-8 mb-5">
+        <h2>Тест на Профнепригодность</h2>
+        <p>Тест на Профнепригодность поможет вам определить, насколько вы подходите для работы в крупной компании.
+            Тест состоит из 3 частей, в каждой из которых вам нужно выбрать один из двух вариантов ответа. Всего в
+            тесте 18 вопросов. После прохождения теста вы узнаете свой результат.</p>
         <form id="personalityForm">
             <!-- 1й блок Вопросы -->
+            <h3>Часть 1. Стиль работы</h3>
             <div class="mb-3">
                 <label class="form-label">Я люблю начинать новые дела. Начинание и нахождение нового дела для меня
                     гораздо важнее, чем его завершение:</label>
@@ -86,11 +91,105 @@
                 </select>
             </div>
 
+            <!-- 2й блок Вопросы -->
+            <h3>Часть 2. Личностные качества</h3>
+            <div class="mb-3">
+                <label class="form-label">Я легко злюсь:</label>
+                <select class="form-control" name="b2q1">
+                    <option value="1">Не про меня</option>
+                    <option value="2">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="4">Почти про меня</option>
+                    <option value="5">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Мне сложно придумывать, что сказать, если вокруг много людей:</label>
+                <select class="form-control" name="b2q2">
+                    <option value="5">Не про меня</option>
+                    <option value="4">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="2">Почти про меня</option>
+                    <option value="1">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Если у меня появятся проблемы, я решу их самостоятельно:</label>
+                <select class="form-control" name="b2q3">
+                    <option value="5">Не про меня</option>
+                    <option value="4">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="2">Почти про меня</option>
+                    <option value="1">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Перед важными событиями я обычно очень нервничаю:</label>
+                <select class="form-control" name="b2q4">
+                    <option value="5">Не про меня</option>
+                    <option value="4">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="2">Почти про меня</option>
+                    <option value="1">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Когда я нахожусь в одиночестве, мне тяжело придумать чем заняться:</label>
+                <select class="form-control" name="b2q5">
+                    <option value="1">Не про меня</option>
+                    <option value="2">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="4">Почти про меня</option>
+                    <option value="5">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Я люблю сообщать все важные новости во время живого общения:</label>
+                <select class="form-control" name="b2q6">
+                    <option value="1">Не про меня</option>
+                    <option value="2">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="4">Почти про меня</option>
+                    <option value="5">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Мне тяжело просить совета у незнакомых людей:</label>
+                <select class="form-control" name="b2q7">
+                    <option value="5">Не про меня</option>
+                    <option value="4">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="2">Почти про меня</option>
+                    <option value="1">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Порой я ловлю себя на том, что мной руководят эмоции:</label>
+                <select class="form-control" name="b2q8">
+                    <option value="1">Не про меня</option>
+                    <option value="2">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="4">Почти про меня</option>
+                    <option value="5">Про меня</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Я открыто и активно выражаю свои эмоции:</label>
+                <select class="form-control" name="b2q9">
+                    <option value="1">Не про меня</option>
+                    <option value="2">Почти не про меня</option>
+                    <option value="3">Отчасти про меня</option>
+                    <option value="4">Почти про меня</option>
+                    <option value="5">Про меня</option>
+                </select>
+            </div>
+
             <!-- Submit Button -->
             <button type="submit" class="btn btn-primary">РЕЗУЛЬТАТ</button>
         </form>
         <!-- Result Section -->
         <div id="result1" class="d-none mt-5 mb-5 p-3 bg-primary-subtle"></div>
+        <div id="result2" class="d-none mt-5 mb-5 p-3 bg-primary text-light"></div>
     </div>
     <div class="container-fluid bg-dark p-5 text-center">
         <div class="col-12">

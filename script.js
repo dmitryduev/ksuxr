@@ -18,4 +18,21 @@ document.getElementById('personalityForm').addEventListener('submit', function (
     // Display results
     document.getElementById('result1').classList.remove('d-none');
     document.getElementById('result1').innerText = resultText;
+
+    let totalScoreSection2 = 0;
+    for (let i = 1; i <= 9; i++) {
+        totalScoreSection1 += parseInt(document.querySelector('select[name="b2q' + i + '"]').value);
+    }
+
+    console.log(totalScoreSection2);
+
+    if (totalScoreSection1 >= 23) {
+        resultText = "Вы достаточно открытый, в плане выражения эмоций, человек. Вы не скрываете своих чувства и не боитесь полагаться на других людей. Но порой ваша открытость приводит вас или к разочарованию в ком-то, или к излишней эмоциональности, случается, что эмоции берут верх над вашим разумом. Ваша открытость может помочь вам в работе с толпой. Агитации, презентации товаров компании или своих проектов, это та деятельность, выполняя которую вы сможете показать себя в лучшем свете.";
+    } else {
+        resultText = "Вы редко показываете свои эмоции и не сильно любите находится в компании с большим количеством людей, массовые выступления — это также не совсем ваш конёк. Тихая работа в одиночестве или в небольшой группе людей принесет вам гораздо больше удовлетворения, нежели презентация какого-либо продукта компании.";
+    }
+
+    // Display results
+    document.getElementById('result2').classList.remove('d-none');
+    document.getElementById('result2').innerText = resultText;
 });
